@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>Event</title>
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,17 +14,35 @@
 <body>
     <header>
         <div class="container">
-
+            <nav class="nav">
+                <a href="#" class="logo">Events</a>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link active">About</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Jury</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Competitors</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main><section class="section">
+    <main><section>
+        <div class="slider">
+            <div class="slide">
+                <div class="cover" style="background-image: url(img/cover.png);"> <!--cover = the name of bg + text--> <!--Why we added style...?-->
+                    <div class="cover__content">
+                        <h1 class="cover__title">Are you ready for the Battle?</h1>
+                        <p class="cover__text">The clash between graphic designers</p>
+                        <a href="" class="btn btn--transparent">Download Our Case Study</a> <!--btn = button, transparent = opasity of the button-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section .section--extra-padding">
         <div class="container"></div>
     </section>
-    <section class="section">
-        <div class="container"></div>
-    </section>
-    <section class="section">
+    <section class="section .section--extra-padding section--light">
         <div class="container"></div>
     </section>
     <section class="section">
