@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
+
+
+
 <body>
     <header>
         <div class="container">
@@ -26,19 +29,27 @@
         </div>
     </header>
 
-    <main><section>
-        <div class="slider">
-            <div class="slide">
-                <div class="cover" style="background-image: url(img/cover.png);"> <!--cover = the name of bg + text--> <!--Why we added style...?-->
-                    <div class="cover__content">
-                        <h1 class="cover__title">Are you ready for the Battle?</h1>
-                        <p class="cover__text">The clash between graphic designers</p>
-                        <a href="" class="btn btn--transparent">Download Our Case Study</a> <!--btn = button, transparent = opasity of the button-->
+
+
+
+    <main>
+        <section>
+            <div class="slider">
+                <div class="slide">
+                    <div class="cover" style="background-image: url(img/cover.png);"> <!--cover = the name of bg + text--> <!--Why we added style...?-->
+                        <div class="cover__content">
+                            <h1 class="cover__title">Are you ready for the Battle?</h1>
+                            <p class="cover__text">The clash between graphic designers</p>
+                            <a href="" class="btn btn--transparent">Download Our Case Study</a> <!--btn = button, transparent = opasity of the button-->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+
+
 
     <section class="section .section--extra-padding">
         <div class="container">
@@ -91,6 +102,10 @@
             </div>
     </section>
 
+
+
+
+    
     <section class="section section--extra-padding section--light section--gradient">
         <div class="container">
 
@@ -173,24 +188,123 @@
             </div>
         </div>
     </section>
+
+
+
+
     <section class="section">
         <div class="container">
-            <h2>Sponsorship</h2>
-            
+            <h2 class="section__title text-center">Sponsorship</h2>
+            <ul class="sponsors">
+                <li class="sponsor">
+                    <a href="#" class="sponsor___link">
+                        <img src="img/clients-01.png" alt="sponsor_1" class="sponsor__img">
+                    </a>
+                </li>
+
+                <li class="sponsor">
+                    <a href="#" class="sponsor___link">
+                    <img src="img/clients-02.png" alt="sponsor_2" class="sponsor__img">
+                    </a>
+                </li>
+
+                <li class="sponsor">
+                    <a href="#" class="sponsor___link">
+                    <img src="img/clients-03.png" alt="sponsor_3" class="sponsor__img">
+                    </a>
+                </li>
+
+                <li class="sponsor">
+                    <a href="#" class="sponsor___link">
+                    <img src="img/clients-04.png" alt="sponsor_4" class="sponsor__img">
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
-    <section class="section">
-        <div class="container"></div>
-    </section>
-    <section class="section">
-        <div class="container"></div>
-    </section></main>
 
-    <footeer>
+
+
+
+    <section class="section section--bgc-pink">
         <div class="container">
+            <h2 class="text-center">Jury 2017</h2>
+            <div class="users">
 
+                <div class="user user--round">
+                    <div class="user__wrap" class="user">
+                        <img class="user__img" src="img/sawyer-bengtson-326312-unsplash@2x.jpg" alt="Alex Perez">
+                    </div>
+                    <div class="user__name">Alex Perez</div>
+                    <div class="class__discription">Creative Director at Amazing Game</div>
+                </div>
+
+                <div class="user user--round">
+                    <div class="user__wrap" class="user">
+                        <img class="user__img" src="img/ayo-ogunseinde-93181-unsplash@2x.jpg" alt="Ayo Ogunseinde">
+                    </div>
+                    <div class="user__name">Ayo Ogunseinde</div>
+                    <div class="class__discription">Creative Director at Amazing Game</div>
+                </div>
+
+                <div class="user user--round">
+                    <div class="user__wrap" class="user">
+                        <img class="user__img" src="img/matheus-ferrero-216385-unsplash@2x.jpg" alt="Matheus Ferrero">
+                    </div>
+                    <div class="user__name">Matheus Ferrero</div>
+                    <div class="class__discription">Creative Director at Amazing Game</div>
+                </div>
+            </div>
         </div>
-    </footeer>
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                        <h2 class="section__title">Contact Us</h2>
+                        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+            </div>
+            <form action="" method="POST" name="contact" class="form-contact" autocomplete="off">
+                <div class="row">
+                    <div class="col">
+                        <input class="form-contact__input" type="text" name="firstname" id="firstname">
+                        <label class="form-contact__label" for="firstname">First Name</label>
+                    </div>
+
+                    <div class="col">
+                        <input class="form-contact__input" type="text" name="lastname" id="lastname">
+                        <label class="form-contact__label" for="lastname">Last Name</label>
+                    </div>
+                    <!-- textarea for message-->
+                </div>
+            </form>
+        </div>
+    </section>
+    </main>
+
+
+
+
+
+    <footer class="section text-center">
+        <div class="container">
+            <h3>Newsletter</h3>
+            <p class="text-medium">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+            <form action="#" method="POST" name="subscribe" class="form-subscribe" autocomplete="off">
+                <input class="form-subscribe__input" type="email" name="email">
+                <button class="btn" type="submit">Subscribe</button>
+            </form>
+            <ul class="soicals">
+                <li class="social"><a href="#" class="social__link"><i class="fab fa-twitter"></i></a></li>
+                <li class="social"><a href="#" class="social__link"><i class="fab fa-dribbble"></i></a></li>
+                <li class="social"><a href="#" class="social__link"><i class="fab fa-instagram"></i></a></li>
+                <li class="social"><a href="#" class="social__link"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+        
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/c7e052e6dd.js"></script>
 </body>
