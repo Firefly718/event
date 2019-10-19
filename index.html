@@ -267,18 +267,42 @@
                         <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
             </div>
             <form action="" method="POST" name="contact" class="form-contact" autocomplete="off">
+
                 <div class="row">
                     <div class="col">
-                        <input class="form-contact__input" type="text" name="firstname" id="firstname">
+                        <input class="form-contact__input" requaired type="text" name="firstname" id="firstname">
                         <label class="form-contact__label" for="firstname">First Name</label>
                     </div>
 
                     <div class="col">
-                        <input class="form-contact__input" type="text" name="lastname" id="lastname">
+                        <input class="form-contact__input" requaired type="text" name="lastname" id="lastname">
                         <label class="form-contact__label" for="lastname">Last Name</label>
                     </div>
-                    <!-- textarea for message-->
                 </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input class="form-contact__input" requaired type="email" name="email" id="email">
+                        <label class="form-contact__label" for="email">Email</label>
+                    </div>
+
+                    <div class="col">
+                        <input class="form-contact__input" requaired type="url" name="site" id="site">
+                        <label class="form-contact__label" for="site">Web Site</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col col--lg">
+                        <textarea class="form-contact__input" name="message" id="message" rows="7"></textarea>
+                        <label class="form-contact__label" for="message">Message</label>
+                    </div>
+                </div>
+
+                <div class="row row--right">
+                    <button type="submit" class="btn btn--dark btn--sharp">Send Message</button>
+                </div>
+
             </form>
         </div>
     </section>
@@ -307,5 +331,16 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/c7e052e6dd.js"></script>
+    <script>
+        let inputs = document.querySelectorAll('.form-contact__input');
+        inputs.forEach(function(input) {
+            input.addEventListener('change', function() {
+                console.log(this.value);
+                if (this.value.length > 0) {
+                    this.classList.add('filled');
+                }
+            })
+        });
+    </script>
 </body>
 </html>
